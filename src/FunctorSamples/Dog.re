@@ -1,0 +1,1 @@
+type dog = {skill: string};

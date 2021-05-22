@@ -1,0 +1,1 @@
+type cat = {pattern: int};

@@ -1,0 +1,33 @@
+{
+  "name": "react-reason-components",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack serve",
+    "webpack:production": "NODE_ENV=production webpack serve"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anuragsoni/routes": "^0.9.1",
+    "@tsnobip/isotrope": "^0.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "reason-react": "^0.9.1",
+    "reason-react-compat": "^2.0.0",
+    "reason-react-update": "^2.0.0"
+  },
+  "devDependencies": {
+    "bs-platform": "^9.0.2",
+    "html-webpack-plugin": "^5.3.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
