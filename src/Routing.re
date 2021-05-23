@@ -78,10 +78,9 @@ module Application = (R: Routing) : Content => {
           // } else {
           //   NoUpdate;
           // }
-          | DetectedPageLoadError(error) => {
-              ...state,
-              page: Loaded(getPageElement(state.page)),
-            }
+          | DetectedPageLoadError(error) =>
+            onError(error)->ignore;
+            {...state, page: Loaded(getPageElement(state.page))};
           // UpdateWithSideEffects(
           //   {...state, page: Loaded(getPageElement(state.page))},
           //   _ => onError(error),
